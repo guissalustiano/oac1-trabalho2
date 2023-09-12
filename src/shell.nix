@@ -7,7 +7,6 @@ pkgs.mkShell {
 
     (python3.withPackages (ps: [
       ps.jedi-language-server
-      ps.cython
     ]))
     pypy3
   ];
