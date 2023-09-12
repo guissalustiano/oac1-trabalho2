@@ -1,11 +1,14 @@
 { pkgs ? (import <nixpkgs> {}), ... }:
 pkgs.mkShell {
-  packages = [
-    (pkgs.python3.withPackages (ps: [
-      ps.jedi-language-server
-    ]))
+  packages = with pkgs; [
+    gnumake
 
-    pkgs.curl
-    pkgs.jq
+    gcc
+
+    (python3.withPackages (ps: [
+      ps.jedi-language-server
+      ps.cython
+    ]))
+    pypy3
   ];
 }
