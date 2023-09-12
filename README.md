@@ -6,6 +6,7 @@ sudo apt install gcc
 
 ## Java
 ```bash
+apt install -y default-jdk
 ```
 
 ## CPython
@@ -27,6 +28,8 @@ gcc -o mandelbrot -std=c11 -O2 mandelbrot.c -lm
 
 ## Java
 ```bash
+javac mandelbrot.java
+java Mandelbrot
 ```
 
 ## CPython

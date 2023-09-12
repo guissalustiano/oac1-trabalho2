@@ -9,5 +9,8 @@ pkgs.mkShell {
       ps.jedi-language-server
     ]))
     pypy3
+
+    jdk17
+    java-language-server
   ];
 }
