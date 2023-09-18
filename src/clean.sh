@@ -1,5 +1,3 @@
-.PHONY: clean
-clean:
-	rm *.ppm
-	rm mandelbrot
-    rm *.class
+rm *.ppm
+rm mandelbrot_* *.class
+rm *.csv
