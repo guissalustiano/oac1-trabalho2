@@ -94,8 +94,6 @@ void create_mandelbrot(const frame_t *frame, image_t *image) {
   double real_step = (frame->real_max - frame->real_min) / image->width;
   double imag_step = (frame->imag_max - frame->imag_min) / image->height;
 
-  // Ultiliza o OpemMP para paralelizar o for, ou seja, cada linha do programa é calculada em uma thread diferente
-  #pragma omp parallel for
   for (int y = 0; y < image->height; y++) {
     // A partir do step e do ponto inicial, calcula o valor da parte imaginaria referente ao ponto (https://pt.wikipedia.org/wiki/Interpola%C3%A7%C3%A3o_linear)
     double imag = frame->imag_min + y * imag_step;
