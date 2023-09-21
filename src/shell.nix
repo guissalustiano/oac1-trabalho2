@@ -1,8 +1,6 @@
 { pkgs ? (import <nixpkgs> {}), ... }:
 pkgs.mkShell {
   packages = with pkgs; [
-    gnumake
-
     gcc
 
     (python3.withPackages (ps: [
@@ -11,6 +9,8 @@ pkgs.mkShell {
     pypy3
 
     jdk17
-    java-language-server
+    jdt-language-server
+
+    linuxKernel.packages.linux_6_1.perf
   ];
 }
