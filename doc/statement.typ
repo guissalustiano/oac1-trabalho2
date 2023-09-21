@@ -135,7 +135,7 @@ $ # Compila o código
 $ javac mandelbrot.java
 
 $ # Roda o programa e salva o resultado em um arquivo
-$ perf stat -x ';' -r 10 -e cycles,instructions,duration_time java mandelbrot -2.5 1.5 -2.0 2.0 4096 2>&1 | tee java.csv
+$ perf stat -x ';' -r 10 -e cycles,instructions,duration_time java Mandelbrot -2.5 1.5 -2.0 2.0 4096 2>&1 | tee java.csv
 ```
 
 // demorou 3m16s
