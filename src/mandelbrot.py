@@ -12,7 +12,7 @@ class Pixel:
     blue: int
 
 class Image:
-    pixels #: list[list[Pixel]] # Not work in pypy 3.8
+    #pixels #: list[list[Pixel]] # Not work in pypy 3.8
 
     @property
     def width(self) -> int:
