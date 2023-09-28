@@ -49,8 +49,8 @@ class PerfResult:
             counter_value=float(counter_value.strip()) if counter_value != "<not counted>" else None,
             event=event,
             metric_unit=metric_unit,
-            metric_value=float(metric_value.strip() or 0),
-            variance=float(variance.strip().replace('%', '')),
+            metric_value=float(metric_value.strip().replace(',','.') or 0),
+                variance=float(variance.strip().replace('%', '').replace(',','.')),
             unit=unit,
         )
 
