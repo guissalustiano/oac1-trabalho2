@@ -100,7 +100,7 @@ instalado siga as instruções disponivel na #link("https://raw.githubuserconten
 
 Além disso vamos precisar do pypy e do java, se você ainda não tiver eles instalados no seu sistema você pode instalar com o comando abaixo:
 ```bash
-$ sudo apt install pypy openjdk-17-jdk
+$ sudo apt install pypy3 openjdk-17-jdk
 ```
 
 Um container docker também está disponível para uso, basta usar o script `run_by_docker.sh`.
